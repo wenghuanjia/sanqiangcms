@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--#include file="resources.html"-->
+    <!-- <script src="main.js"></script> -->
+</head>
+
+<body>
+    <!--#include file="head.html"-->
+
+    <!-- 中间部分 -->
+    <!--form:{table="xinwen_dongtai" order="id desc" limit="10"}-->
+    <div class="about_img news_d">
+        <!-- <img src="{$form.xinwen_dongtai_img}" width="100%" alt=""> -->
+        <!-- <img src="__TPL__images/obg.png" alt=""> -->
+        <img src="__TPL__images/xinwen.png" alt="">
+    </div>
+    <!--/form-->
+
+    <!-- <div class="swiper">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="__TPL__images/banner1.png" alt="" title="">
+                        <text class="swiper_text"></text>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="__TPL__images/banner1.png" alt="" title="">
+                        <text class="swiper_text"></text>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div> -->
+    <!-- 中间部分 -->
+    <div class="news_middle">
+        <div class="news_mid1">
+            <a href="#">首页</a>
+            <span>></span>
+            <a href="#">新闻动态</a>
+        </div>
+    </div>
+    <div class="news_middle1">
+        <div class="yeneidongtai">
+            <div class="yeneidongtai_item yeneidongtai_item_active">公司动态</div>
+            <div class="yeneidongtai_item">业内动态</div>
+        </div>
+    </div>
+    <div class="news_item news_item_active">
+        <div class="news_middle2">
+            <!--list:{table="content" type="sub" cid="25" order="updatetime desc" limit="3"}-->
+            <div class="div_img">
+                <div class="bgimg">
+                    <!-- <img src="__TPL__images/bgimg_1.png" alt=""> -->
+                    <img src="{$list.xinwen_image}" alt="">
+                </div>
+                <div class="div_desc">
+                    <div class="div_img_title">{$list.title}</div>
+                    <div class="div_img_date">{$list.inputtime time="Y-m-d"}</div>
+                    <div class="div_img_cont">
+                        {$list.description}
+                        <!-- {$list.xinwen_content} -->
+                        <!-- {$info.content} -->
+                    </div>
+                </div>
+                <a href="{$list.aurl}">
+                    <div class="div_img_more">阅读更多</div>
+                </a>
+            </div>
+            <!--/list-->
+        </div>
+        <div class="news_wenzhang">
+            <!--foreach:{$loop $vo}-->
+            <div class="wenzhang">
+                <a href="{$vo.aurl}">
+                    <div class="wenzhang_imgcon">
+                        <div>
+                            <div class="wenzhang_title">{$vo.title}</div>
+                            <div class="wenzhang_date">{$vo.inputtime time="Y-m-d"}</div>
+                            <div class="wenzhang_con">
+                                {$vo.description}
+                            </div>
+                        </div>
+                        <div class="wenzhang_img">
+                            <img src="{$vo.image}" width="100%" alt="">
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!--/foreach-->
+        </div>
+        <div class="jumpPage">
+            <a class="prePage pre" href="/rencaitongdao/index.html">上一页</a>
+            {$page}
+            <a class="nextPage next" href="/rencaitongdao/index-2.html">下一页</a>
+        </div>
+    </div>
+    <div class="news_item">
+        <div class="news_middle2">
+            <!--list:{table="content" type="sub" cid="26" order="updatetime desc" limit="3"}-->
+            <div class="div_img">
+                <div class="bgimg">
+                    <!-- <img src="__TPL__images/bgimg_1.png" alt=""> -->
+                    <img src="{$list.xinwen_image}" alt="">
+                </div>
+                <div class="div_desc">
+                    <div class="div_img_title">{$list.title}</div>
+                    <div class="div_img_date">{$list.inputtime time="Y-m-d"}</div>
+                    <div class="div_img_cont">
+                        {$list.description}
+                        <!-- {$list.xinwen_content} -->
+                        <!-- {$info.content} -->
+                    </div>
+                </div>
+                <a href="{$list.aurl}">
+                    <div class="div_img_more">阅读更多</div>
+                </a>
+            </div>
+            <!--/list-->
+        </div>
+        <div class="news_wenzhang">
+            <!--list:{table="content" type="sub" cid="26" order="updatetime desc" limit="5"}-->
+            <div class="wenzhang">
+                <a href="{$list.aurl}">
+                    <div class="wenzhang_imgcon">
+                        <div>
+                            <div class="wenzhang_title">{$list.title}</div>
+                            <div class="wenzhang_date">{$list.inputtime time="Y-m-d"}</div>
+                            <div class="wenzhang_con">
+                                中国橡胶网讯在3月20日泰国橡胶工业永续发展研究座谈会上，副总理巴金上将指出，泰国政府致力于完善泰国境内橡胶加工产业和提升橡胶使用量，在未来10年内，每年的橡胶加工比例提升至25%～30%。在3月20日泰国橡胶工业永续发展研究座谈会上...
+                            </div>
+                        </div>
+                        <div class="wenzhang_img">
+                            <img src="{$list.image}" width="100%" alt="">
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!--/list-->
+        </div>
+    </div>
+    <!-- 底部 -->
+    <!-- 底部 -->
+    <!--#include file="footer.html"-->
+
+</body>
+<script src="js/swiper.js"></script>
+<script>
+    $(".navActive").css('background-color', '#DF2525');
+    var mySwiper = new Swiper('.swiper-container', {
+        loop: true,
+        autoplay: true,
+        parallax: true,
+        // 如果需要前进后退按钮
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    })
+    $('.yeneidongtai_item').click(function(){
+        $(this).addClass('yeneidongtai_item_active').siblings().removeClass('yeneidongtai_item_active');
+        let index = $(this).index();
+        $('.news_item').eq(index).addClass('news_item_active').siblings().removeClass('news_item_active');
+    })
+</script>
+
+</html>

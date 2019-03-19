@@ -1,0 +1,39 @@
+<div class="top">
+    <div class="top33">
+        <div class="top22">
+            <div class="logo"><img class='logo' src="__TPL__images/LOGO.png" alt=""></div>
+            <div class="top11">
+                <p class="top1">PBT Environmental Protection</p>
+                <p class="top2">Plastic Material Supplier</p>
+                <p class="top3">PBT环保塑料原料供应商</p>
+            </div>
+        </div>
+        <div class="top44">
+            <div class="top55"><img class='' src="__TPL__images/phone.png" alt=""></div>
+            <div class="">
+                <p class="top4">热线电话</p>
+                <p class="top5">0757-888-6666</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="top_next">
+    <div class="top_next_a">
+        <!--list:{table="category" type="top" order="cid asc" limit="10"}-->
+        <a href="{$list.curl}" data-id="{$list.cid}">{$list.name}
+            <div class="currentI">
+                <img src="__TPL__images/Identification.png" alt="">
+            </div>
+        </a>
+        <div class="line"></div>
+        <!-- <?php var_dump($list['curl']);?>
+            <?php $suffix = $list['curl'] . '' . $list['name'];?> -->
+        <!--/list-->
+    </div>
+</div>
+
+<script>
+    var id = '{$top_category["cid"]}' || 1;
+    $('.top_next_a a[data-id=' + id + ']').addClass('active');
+</script>

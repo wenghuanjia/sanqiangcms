@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--#include file="resources.html"-->
+    <!-- <script src="main.js"></script> -->
+</head>
+
+<body>
+    <!--#include file="head.html"-->
+
+    <!-- 中间部分 -->
+    <!--form:{table="about_me" order="id desc" limit="10"}-->
+        <div class="about_img">
+            <img src="{$form.about_me_img}" width="100%" alt="">
+        </div>
+    <!--/form-->
+    <div class="about_mid">
+        <div class="about_mid1">专注塑料的研究、
+            开发与制造</div>
+        <div class="about_mid2">
+            佛山市顺德区杏坛镇三强塑料厂位于中国塑料重镇杏坛镇，从2000年初至今一直专注于塑料树脂PBT，PC及TPEE的研究、开发与制造工作。经过多年的生产经营，本厂一直保持稳健经营、质量第一的宗旨，从2010年开始获得一般纳税人资格，现拥有两座厂房，专业生产各档次的PBT、PC工程塑料以及TPEE热塑性弹性体产品
+        </div>
+    </div>
+
+    <div class="about_mid3">
+        <div class="about_mid15">
+            <div class="about_mid4">拥有多种抽粒系列</div>
+            <div class="about_mid5">
+                经过多年的发展和积累，现阶段本厂产品线主要包括：本色及各种颜色的阻燃PBT及阻燃强PBT系列；PC抽粒，阻燃抽粒系列，以及特质的性能稳定的PC/ABS合金；TPEE原色及黑色，涵盖各种软硬度抽粒系列；本厂坚持与客户深度沟通合作，产品适合各档次的使用要求，并能够根据客户的要求进行配方调整，以及特质配方的研发制造
+            </div>
+        </div>
+    </div>
+
+    <div class="about_img6">
+        <div class="about_img7">
+            <div class="about_img8">
+                <div>TPEE系列</div>
+            </div>
+            <div class="about_img10">
+                <div>
+                    PC（改性聚碳酸酯）具有高强度，高冲击，使用温度范围广；成型收缩率低，尺寸稳定性好，耐疲劳性优，耐候性佳，可长期用于户外；无味无臭，对人体无害，卫生安全；PC具有自熄性
+                </div>
+            </div>
+        </div>
+        <div class="about_img12">
+            <div class="about_img9">
+                <div>
+                    TPEE（热塑性聚酯弹性体）是含有聚酯硬段和聚醚软段的嵌段共聚物。TPEE具有橡胶的弹性和工程塑料的强度；软段赋予它弹性，使它象橡胶；硬段赋予它加工性能，是它象塑料；与橡胶相比，它具有更好的加工性能和更长的使用寿命；与工程相比，同样具有强度高的特点，而柔韧性和动态力学性能更好
+                </div>
+            </div>
+            <div class="about_img11">
+                <div>PC系列</div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="about_mid21">
+        <div class="about_mid13">先进的生产工艺</div>
+        <div class="about_mid2">
+            我们拥有业界领先的生产工艺车间及合作生产车间，并且拥有专业的检测实验室及研发中心，拥有经验丰富的产品工程师与工艺工程师，专业的销售与售后服务团队，将持续为客户提供高品质的产品，高标准的售后服务于技术支持
+        </div>
+    </div>
+    <div class="about_img13">
+        <img src="__TPL__images/aboutour.png" width="100%" alt="">
+    </div>
+    <!-- 底部 -->
+    <!--#include file="footer.html"-->
+
+
+</body>
+<!-- <script type="text/javascript" src="https://api.map.baidu.com/api?key=&v=1.1&services=true"></script> -->
+<script>
+    /* //创建和初始化地图函数：
+    function initMap() {
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+    }
+
+    //创建地图函数：
+    function createMap() {
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(113.277814, 22.825083);//定义一个中心点坐标
+        map.centerAndZoom(point, 17);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+
+    //地图事件设置函数：
+    function setMapEvent() {
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+
+    //地图控件添加函数：
+    function addMapControl() {
+        //向地图中添加缩放控件
+        var ctrl_nav = new BMap.NavigationControl({ anchor: BMAP_ANCHOR_TOP_LEFT, type: BMAP_NAVIGATION_CONTROL_LARGE });
+        map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+        var ctrl_ove = new BMap.OverviewMapControl({ anchor: BMAP_ANCHOR_BOTTOM_RIGHT, isOpen: 1 });
+        map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+        var ctrl_sca = new BMap.ScaleControl({ anchor: BMAP_ANCHOR_BOTTOM_LEFT });
+        map.addControl(ctrl_sca);
+    }
+
+
+    initMap();//创建和初始化地图 */
+
+</script>
+
+</html>

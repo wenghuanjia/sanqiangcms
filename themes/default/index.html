@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--#include file="resources.html"-->
+    <!-- <script src="./js/main.js"></script> -->
+</head>
+
+<body>
+    <!--#include file="head.html"-->
+    <div class="swiper">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!--form:{table="broadcast" order="id desc" limit="10"}-->
+                <?php $data=unserialize($form['broadcast_pic']);?>
+                <?php foreach($data as $key => $value):?>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="{$value['url']}" width="100%" alt="" title="">
+                    </a>
+                </div>
+                <?php endforeach;?>
+                <!--/form-->
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+    <div class="middle_div">
+        <div class="middle_div1">
+            <img src="__TPL__images/middle1.png" class="pic" alt="">
+            <a href="{$curl.3}"><img src="__TPL__images/jiantou.png" class="pic" alt=""></a>
+            <a href="{$curl.5}"><img src="__TPL__images/Talentrecruitment.png" class="pic" alt=""></a>
+            <a href="{$curl.2}"><img src="__TPL__images/Companypurpose.png" class="pic" alt=""></a>
+        </div>
+    </div>
+    <div class="middle_div2">
+        <div class="middle_div21">
+            <div>
+                <div><img src="__TPL__images/about.jpg" alt=""></div>
+            </div>
+            <div class="middle_div22">
+                <div class="aboutus"><img src="__TPL__images/about.png" width="100%" height="100%" alt=""></div>
+                <div class="about_div">
+                    <div class="detail">
+                        <span>
+                            佛山市顺德区杏坛镇三强塑料厂位于中国塑料重镇杏坛镇，从2000年初至今一直专注于塑料树脂PBT，PC及TPEE的研究、开发与制造工作。经过多年的生产经营，本厂一直保持稳健经营、质量第一的宗旨，从2010年开始获得一般纳税人资格，现拥有两座厂房，专业生产各档次的PBT、PC工程塑料以及TPEE热塑性弹性体产品。
+                        </span>
+                    </div>
+                    <div class="more_img"><img src="__TPL__images/duixiang.png" alt=""></div>
+                    <div class="botton"><button class="more"><a href="{$curl.2}">了解更多</a></button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="product_show11">
+        <div class="product_show1">
+            <div class="product_show product_show_active">
+                <!--list:{table="content" type="sub" cid="15" order="updatetime desc" limit="6"}-->
+                <div>
+                    <div class="product_tpee"><img src="{$list.image}" alt=""></div>
+                    <div class="tpee">
+                        <div class="tpee1">
+                            <p class="tpee_p1">{$list.subtitle}</p>
+                            <p class="tpee_p2">{$list.description}</p>
+                        </div>
+                        <div class="tpee_p4">
+                            <a href="{$list.aurl}">
+                                <span class="tpee_p3">Learn more</span>
+                                <img src="__TPL__images/tpee.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--/list-->
+            </div>
+            <div class="product_show">
+                <!--list:{table="content" type="sub" cid="17" order="updatetime desc" limit="6"}-->
+                <div>
+                    <div class="product_tpee"><img src="{$list.image}" alt=""></div>
+                    <div class="tpee">
+                        <div class="tpee1">
+                            <p class="tpee_p1">{$list.subtitle}</p>
+                            <p class="tpee_p2">{$list.description}</p>
+                        </div>
+                        <div class="tpee_p4">
+                            <a href="{$list.aurl}">
+                                <span class="tpee_p3">Learn more</span>
+                                <img src="__TPL__images/tpee.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--/list-->
+            </div>
+            <div class="product_show">
+                <!--list:{table="content" type="sub" cid="18" order="updatetime desc" limit="6"}-->
+                <div>
+                    <div class="product_tpee"><img src="{$list.image}" alt=""></div>
+                    <div class="tpee">
+                        <div class="tpee1">
+                            <p class="tpee_p1">{$list.subtitle}</p>
+                            <p class="tpee_p2">{$list.description}</p>
+                        </div>
+                        <div class="tpee_p4">
+                            <a href="{$list.aurl}">
+                                <span class="tpee_p3">Learn more</span>
+                                <img src="__TPL__images/tpee.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--/list-->
+            </div>
+            <div class="product_show">
+                <!--list:{table="content" type="sub" cid="19" order="updatetime desc" limit="6"}-->
+                <div>
+                    <div class="product_tpee"><img src="{$list.image}" alt=""></div>
+                    <div class="tpee">
+                        <div class="tpee1">
+                            <p class="tpee_p1">{$list.subtitle}</p>
+                            <p class="tpee_p2">{$list.description}</p>
+                        </div>
+                        <div class="tpee_p4">
+                            <a href="{$list.aurl}">
+                                <span class="tpee_p3">Learn more</span>
+                                <img src="__TPL__images/tpee.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--/list-->
+            </div>
+            <div class="product_show">
+                <!--list:{table="content" type="sub" cid="27" order="updatetime desc" limit="6"}-->
+                <div>
+                    <div class="product_tpee"><img src="{$list.image}" alt=""></div>
+                    <div class="tpee">
+                        <div class="tpee1">
+                            <p class="tpee_p1">{$list.subtitle}</p>
+                            <p class="tpee_p2">{$list.description}</p>
+                        </div>
+                        <div class="tpee_p4">
+                            <a href="{$list.aurl}">
+                                <span class="tpee_p3">Learn more</span>
+                                <img src="__TPL__images/tpee.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--/list-->
+            </div>
+            <div class="product_show2">
+                <div class="chanpin">
+                    <p>PRODUCT</p>
+                    <p>产品展示</p>
+                </div>
+                <div class="produ_show1">
+                    <!--list:{table="category" type="sub" order="cid asc" pid="3" limit="5"}-->
+                    <div class="produ_show produ_item"><img src="__TPL__images/prodshow.png" alt="">
+                        <!-- <a href="{$list.curl}">{$list.name}</a> -->
+                        <p>{$list.name}</p>
+                    </div>
+                    <!--/list-->
+                    <div class="produ_show"><img src="__TPL__images/more_prod.png" alt="">
+                        <p><a href="{$curl.3}">更多产品</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="business">
+        <div class="sqyewu">
+            <div><span class="sqyewu1">三强业务</span><span class="sqyewu2">BUSINESS</span></div>
+            <hr class="friend_hr" />
+            <div class="yewu1">
+                <div class="yewu currentColor"><img src="__TPL__images/yewu4.png" alt="">
+                    <p class="yewu3">国内业务</p>
+                    <img class="duobianxing currenti" src="__TPL__images/duobianxing.png" alt="">
+                </div>
+                <div class="yewu"><img src="__TPL__images/yewu2.png" alt="">
+                    <p class="yewu3">外贸业务</p>
+                    <img class="duobianxing" src="__TPL__images/duobianxing.png" alt="">
+                </div>
+                <div class="yewu"><img src="__TPL__images/prodshow.png" alt="">
+                    <p class="yewu3">国外抽粒</p>
+                    <img class="duobianxing" src="__TPL__images/duobianxing.png" alt="">
+                </div>
+                <div class="yewu"><img src="__TPL__images/yewu3.png" alt="">
+                    <p class="yewu3">国外合作伙伴</p>
+                    <img class="duobianxing" src="__TPL__images/duobianxing.png" alt="">
+                </div>
+                <div class="yewu2"><a href="{$curl.2}"><img src="__TPL__images/yewu5.png" alt=""></a></div>
+            </div>
+        </div>
+        <div class="waimao current">
+            <div class="maowai1">
+                <div class="waimao2"><span>
+                        <hr class="waimaohr" /></span><span class="waimaoyewu">国内业务</span></div>
+                <div class="waimao4">
+                    <div><img src="__TPL__images/juxing.png"><span class="waimao3">本厂拥有业界领先的生产工艺车间及合作生产车间，并且拥有专业的检测实验室及研发中心</span></div>
+                    <div><img src="__TPL__images/juxing.png"><span class="waimao3">拥有经验丰富的产品工程师与工艺工程师，专业的销售和售后团队，将持续为客户提供高品质的产品、售后服务和技术支持。</span></div>
+                    <div><img src="__TPL__images/juxing.png"><span class="waimao3">国内现有合作客户 佛山照明、华艺灯饰、美的集团等</span></div>
+                    <div><img src="__TPL__images/juxing.png"><span class="waimao3">业务地区 有 广东 厦门 浙江 广西 湖南</span></div>
+                </div>
+            </div>
+            <div><img src="__TPL__images/guoneiyewu.jpg" alt=""></div>
+        </div>
+        <div class="waimao">
+            <div class="maowai1">
+                <div class="waimao2"><span>
+                        <hr class="waimaohr" /></span><span class="waimaoyewu">外贸业务</span></div>
+                <div class="waimao4">
+                    <div><img src="__TPL__images/juxing.png"><span class="waimao3">外贸业务 ： 包括 德国 英国 韩国 日本 越南 泰国 马来西亚
+                            香港</span></div>
+                    <div><img src="__TPL__images/juxing.png"><span class="waimao3">外贸业务： 英国当地 SQ Plastics Ltd 贸易公司 德国当地
+                            Dahua</span></div>
+                    <div><img src="__TPL__images/juxing.png"><span class="waimao3">International Handels GmbH 公司等几家公司
+                            拥有大量国外废塑料资源可对接全球各大港口</span></div>
+                </div>
+            </div>
+            <div><img src="__TPL__images/waimaoyewu.jpg" alt=""></div>
+        </div>
+        <div class="waimao">
+            <div class="maowai1">
+                <div class="waimao2"><span>
+                        <hr class="waimaohr" /></span><span class="waimaoyewu">国外抽粒</span></div>
+                <div class="waimao4">
+                    <div><img src="__TPL__images/juxing.png"><span class="waimao3">越南 泰国 马来西亚 韩国</span></div>
+                    <div><img src="__TPL__images/juxing.png"><span class="waimao3">各有厂房每月都有大量货物进口回来</span></div>
+                </div>
+            </div>
+            <div><img src="__TPL__images/guowaichouli.jpg" alt=""></div>
+        </div>
+        <div class="waimao">
+            <div class="maowai1">
+                <div class="waimao2"><span>
+                        <hr class="waimaohr" /></span><span class="waimaoyewu">国外合作伙伴</span></div>
+                <div class="waimao4">
+                    <div><img src="__TPL__images/juxing.png"><span class="waimao3">国外合作伙伴 ： 德国 韩国 英国</span></div>
+                    <div><img src="__TPL__images/juxing.png"><span class="waimao3">国外合作伙伴 ： 德国 英国 贸易公司
+                            韩国是合作伙伴把废塑料加工好再回国内</span></div>
+                </div>
+            </div>
+            <div><img src="__TPL__images/guowaihezuo.jpg" alt=""></div>
+        </div>
+    </div>
+    <div class="new">
+        <div class="news">
+            <div><img src="__TPL__images/news.png" alt=""></div>
+            <div>
+                <div class="news1">
+                    <div class="news2 new_current">公司新闻</div>
+                    <div class="news2">行业新闻</div>
+                    <div class="news_img"><a href="{$curl.4}"><img src="__TPL__images/news_more.png" alt=""></a></div>
+                </div>
+                <div class="news_por news_active">
+                    <!--list:{table="content" type="sub" cid="25" order="updatetime desc" limit="3"}-->
+                    <div class="news_por_item">
+                        <div class="news4"><img src="__TPL__images/rili.png" alt=""><span class="date">{$list.inputtime
+                                time="Y-m-d"}</span>
+                        </div>
+                        <div class="news3">{$list.title}</div>
+                        <div class="news5"><img src="{$list.image}" alt=""></div>
+                        <div>
+                            <div class="more_but"><a href="{$list.aurl}">more <img src="__TPL__images/more.png" alt=""></a></div>
+                        </div>
+                    </div>
+                    <!--/list-->
+                </div>
+                <div class="news_por">
+                    <!--list:{table="content" type="sub" cid="26" order="updatetime desc" limit="3"}-->
+                    <div class="news_por_item">
+                        <div class="news4"><img src="__TPL__images/rili.png" alt=""><span class="date">{$list.inputtime
+                                time="Y-m-d"}</span>
+                        </div>
+                        <div class="news3">{$list.title}</div>
+                        <div class="news5"><img src="{$list.image}" alt=""></div>
+                        <div>
+                            <div class="more_but"><a href="{$list.aurl}">more <img src="__TPL__images/more.png" alt=""></a></div>
+                        </div>
+                    </div>
+                    <!--/list-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="friend">
+        <div class="friend1">
+            <div><span class="friend2">友情链接</span><img src="__TPL__images/friend.png" alt=""></div>
+            <div class="friend3">合作伙伴</div>
+            <div class="jiaotou1">
+                <div class="jiantou"><img class="more_img rotate" src="__TPL__images/next.png" alt=""></div>
+                <div class="jiantou"><img class="more_img" src="__TPL__images/next.png" alt=""></div>
+            </div>
+            <hr class="friend_hr" />
+        </div>
+        <div class="dibutupian">
+            <div class="dibutupian11">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--form:{table="img" order="id desc" limit="12"}-->
+                        <?php $imgs = unserialize($form['img']);?>
+                        <!--/form-->
+                        <?php foreach($imgs as $v):?>
+                        <div class="swiper-slide"><a href=""><img src="{$v['url']}" alt=""></a></div>
+                        <?php endforeach;?>
+                        <div class="swiper-slide"><a href=""><img src="__TPL__images/midea.png" alt=""></a></div>
+                        <div class="swiper-slide"><a href=""><img src="__TPL__images/midea.png" alt=""></a></div>
+                        <div class="swiper-slide"><a href=""><img src="__TPL__images/midea.png" alt=""></a></div>
+                        <div class="swiper-slide"><a href=""><img src="__TPL__images/midea.png" alt=""></a></div>
+                        <div class="swiper-slide"><a href=""><img src="__TPL__images/midea.png" alt=""></a></div>
+                        <div class="swiper-slide"><a href=""><img src="__TPL__images/midea.png" alt=""></a></div>
+                        <div class="swiper-slide"><a href=""><img src="__TPL__images/midea.png" alt=""></a></div>
+                        <div class="swiper-slide"><a href=""><img src="__TPL__images/midea.png" alt=""></a></div>
+                        <div class="swiper-slide"><a href=""><img src="__TPL__images/midea.png" alt=""></a></div>
+                        <div class="swiper-slide"><a href=""><img src="__TPL__images/midea.png" alt=""></a></div>
+                        <div class="swiper-slide"><a href=""><img src="__TPL__images/midea.png" alt=""></a></div>
+                        <div class="swiper-slide"><a href=""><img src="__TPL__images/midea.png" alt=""></a></div>
+                        <div class="swiper-slide"><a href=""><img src="__TPL__images/midea.png" alt=""></a></div>
+                        <div class="swiper-slide"><a href=""><img src="__TPL__images/midea.png" alt=""></a></div>
+                        <div class="swiper-slide"><a href=""><img src="__TPL__images/midea.png" alt=""></a></div>
+                        <div class="swiper-slide"><a href=""><img src="__TPL__images/midea.png" alt=""></a></div>
+                        <div class="swiper-slide"><a href=""><img src="__TPL__images/midea.png" alt=""></a></div>
+                        <div class="swiper-slide"><a href=""><img src="__TPL__images/midea.png" alt=""></a></div>
+                        <div class="swiper-slide"><a href=""><img src="__TPL__images/midea.png" alt=""></a></div>
+                        <div class="swiper-slide"><a href=""><img src="__TPL__images/midea.png" alt=""></a></div>
+                        <div class="swiper-slide"><a href=""><img src="__TPL__images/midea.png" alt=""></a></div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <!--#include file="footer.html"-->
+</body>
+
+<script src="js/swiper.js"></script>
+<script>
+    $(".navActive").css('background-color', '#DF2525');
+    var mySwiper = new Swiper('.swiper .swiper-container', {
+        loop: true,
+        autoplay: true,
+        parallax: true,
+        pagination: {
+            el: '.swiper-pagination'
+        },
+        // 如果需要前进后退按钮
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    })
+    var swiper = new Swiper('.dibutupian11 .swiper-container', {
+        // 每行的幻灯片的个数
+        slidesPerView: 6,
+        // 每列幻灯片的数量
+        slidesPerColumn: 2,
+        // 幻灯片之间的间隔距离
+        spaceBetween: 30,
+        // 多少为切换组数
+        slidesPerGroup: 12,
+        pagination: {
+            el: '.dibutupian11 .swiper-pagination',
+            clickable: true,
+        },
+    });
+
+    $('.yewu').click(function () {
+        $('.yewu').css('background-color', '#f0f0f0');
+        $(this).css('background-color', '#0071b6');
+    });
+
+    $('.news1 > div').click(function () {
+        $('.news1 > div').css('color', '#959595');
+        $(this).css('color', '#0071b6');
+    });
+    // 三强业务切换
+    let yewu1 = document.querySelector('.yewu1'),
+        yewulist = document.querySelectorAll('.yewu'),
+        waimao = document.querySelectorAll('.waimao'),
+        duobianxing = document.querySelectorAll('.duobianxing');
+    for (var i = 0; i < yewulist.length; i++) {
+        yewulist[i].index = i; //给每个按钮添加一个自定义属性，存的是他们对应的索引值
+        yewulist[i].onclick = function () {
+            for (var i = 0; i < yewulist.length; i++) {
+                waimao[i].className = 'waimao';
+                yewulist[i].className = 'yewu';
+                duobianxing[i].className = 'duobianxing';
+            }
+            waimao[this.index].className = 'waimao current';
+            duobianxing[this.index].className = 'duobianxing currenti';
+            yewulist[this.index].className = 'yewu currentColor';
+        }
+    }
+    let news2 = document.querySelectorAll('.news2'),
+        news_por = document.querySelectorAll('.news_por');
+    for (var i = 0; i < news2.length; i++) {
+        news2[i].index = i; //给每个按钮添加一个自定义属性，存的是他们对应的索引值
+        news2[i].onclick = function () {
+            for (var i = 0; i < news2.length; i++) {
+                news_por[i].className = 'news_por';
+                news2[i].className = 'news2';
+            }
+            news_por[this.index].className = 'news_por news_active';
+            news2[this.index].className = 'news2 new_current';
+        }
+    }
+    $('.produ_item').click(function () {
+        let index = $(this).index();
+        $('.product_show').eq(index).addClass('product_show_active').siblings().removeClass(
+            'product_show_active');
+    })
+</script>
+
+</html>

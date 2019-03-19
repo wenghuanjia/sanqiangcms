@@ -1,0 +1,38 @@
+<div class="out_footer">
+    <div class="footer">
+        <div class="foot1"><span class="con_us">联系我们</span><span class="con_us">Contact us</span></div>
+        <div class="footer5">
+            <div class="footer2 footer3">
+                <!--form:{table="contact_us" order="id desc" limit="10"}-->
+                {$form.lianxiwomen html}
+                <!--/form-->
+                <!-- <div class="footer3">佛山顺德三强塑料有限公司</div>
+                    <div class="footer3">地址 ：佛山市顺德区杏坛镇吕地工业区东乐路9号</div>
+                    <div class="footer3">邮编 ：528325</div>
+                    <div class="footer3">电话 :0757-27779022</div>
+                    <div class="footer3">邮箱：sanqiang123@sanqiang.com</div> -->
+                <div class="liantian"><img class="qq" src="__TPL__images/qq.png" alt=""><img class="wechat"
+                        src="__TPL__images/wechat.png" alt=""><img src="__TPL__images/juxing.png" alt=""></div>
+            </div>
+            <div class="footer4">
+                <form action="__INDEX__/form/post" method="POST">
+                    <input name="form" type="hidden" value="message_board">
+                    <div class="input">姓名<input class="input1" type="text" name="name"></div>
+                    <div class="input">电话<input class="input1" type="text" name="phone"></div>
+                    <div class="input">邮箱<input class="input1" type="email" name="email"></div>
+                    <div class="input">内容<input class="input1" type="text" name="content"></div>
+                    <div class="liuyan2">
+                        <button class="liuyan" type="submit"></button>
+                        <div class="liuyan1">提交留言</div>
+                    </div>
+                </form>
+            </div>
+            <div class="erweima">
+                <div class="guanzhu"><img src="__TPL__images/erweima.png" alt=""><span>关注三强</span><span>微信公众号</span>
+                </div>
+                <div class="guanzhu"><img src="__TPL__images/erweima.png" alt=""><span>关注三强</span><span>微信小程序</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

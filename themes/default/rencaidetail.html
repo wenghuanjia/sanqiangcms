@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--#include file="resources.html"-->
+    <!-- <script src="main.js"></script> -->
+</head>
+
+<body>
+    <!--#include file="head.html"-->
+    <!-- 中间部分 -->
+    <div class="news_middle">
+        <div class="news_mid1">
+            <a href="#">首页</a>
+            <span>></span>
+            <a href="#">人才通道</a>
+            <span>></span>
+            <a href="#">人才通道详情</a>
+        </div>
+    </div>
+    <div class="detail_mid1">
+        <div class="detail_mid2">
+            <!-- <div class="detail_mid4">产品数据管理专家</div>
+            <div>中国/深圳 - 技术 - 产品与解决方案质量与运营部</div> -->
+            <div class="detail_mid4">{$info.title}</div>
+            <div>{$info.keywords} - {$info.copyfrom} - {$info.subtitle}</div>
+        </div>
+        <div class="detail_mid3"> <a href="{$curl.5}">返回职位列表</a></div>
+    </div>
+    <!-- <div class="detail_mid5">
+        <div>岗位职责</div>
+        <div class="detail_mid6">
+            1. 负责数据库迁移和数据集成解决方案的开发和验证</br>
+            2. 负责软件开发中的数据需求分析、逻辑和物理模型设计</br>
+            3. 关键项目拓展支持和交付。
+        </div>
+    </div> -->
+    <div class="detail_mid5">
+        {$info.content}
+    </div>
+    <div class="detail_mid5">
+        <!-- <div>岗位要求</div>
+        <div class="detail_mid6">
+            业务技能要求：</br>
+            1、能够设计数据库升级、迁移的方案</br>
+            2、能够设计数据和大数据集成、迁移的方案</br>
+            3、能够根据业务需求评估开发范围、集成方式、开发工作量，设计概念、逻辑和物理数据模型</br>
+            专业知识要求：</br>
+            1. 精通至少一种业界主流关系数据库、分布式数据库或并行数据库，如Oracle Database、Hortonworks、Hadoop、Cloudrea CDH、DB2、SQL</br>
+            Server、MySQL等，能够进行企业级部署方案设计、系统管理、升级和迁移、性能优化</br>
+            2. 熟悉主流操作系统如Windows、Linux，具备部署和管理、维护能力</br>
+            2. 熟悉主流数据库升级和迁移的方案和工具，具有实际的项目经验</br>
+            3. 精通数据集成、数据建模和开发工具，熟悉中间层模型以及多维模型的设计</br>
+            4. 熟悉Shareplex、GodenGate等数据库复制工具优先</br>
+            5. 具备大型数据库性能调优、容量规划、升级维护、系统管理经验优先。</br>
+        </div>
+
+        <div class="detail_mid5">
+            <div>薪酬待遇</div>
+            <div class="detail_mid6">1.六险一金；</br>
+                2.国家法定节假日与带薪年休假；</br>
+                3.有竞争力的薪酬及福利；</br>
+                4.加班晚餐补贴及交通补贴</br>
+                5.其他福利：水果零食+生日礼物+节日礼物+宝宝礼金+新婚礼金+定期旅游+“五四”青年节假期+“六一”儿童节假期+“三八”妇女节假期</div>
+        </div> -->
+        <div class="tuijian1 recai_tuijian">
+            <div class="tuijian">推荐职位</div>
+            <div class="rencai_mid2">
+                <div>职位名称</div>
+                <div>职位类别</div>
+                <div>工作地点</div>
+                <div>所属部门</div>
+            </div>
+            
+            <!--list:{table="content" type="sub" cid="5" order="updatetime desc" limit="5"}-->
+            <div class="rencai_mid3">
+                <a href="{$list.aurl}">
+                    <div class="rencai_mid4">
+                        <div class="expert">{$list.title}</div>
+                        <div>技术类</div>
+                        <div>中国/深圳</div>
+                        <div>产品与解决方案质量与运营部</div>
+                    </div>
+                    <div class="rencai_art">{$list.description}</div>
+                </a>
+            </div>
+            <!--/list-->
+
+            <!-- <div class="rencai_mid3">
+                <div class="rencai_mid4">
+                    <div class="expert">产品数据管理专家</div>
+                    <div>技术类</div>
+                    <div>中国/深圳</div>
+                    <div>产品与解决方案质量与运营部</div>
+                </div>
+                <div class="rencai_art">1、主导产品与解决方案体系的软件配置管理和硬件配置管理能力建设，引入业界最佳实践和方法论，打造产品级配置管理综合竞争力，主导中长期规划设计...</div>
+            </div>
+            <div class="rencai_mid3">
+                <div class="rencai_mid4">
+                    <div class="expert">产品数据管理专家</div>
+                    <div>技术类</div>
+                    <div>中国/深圳</div>
+                    <div>产品与解决方案质量与运营部</div>
+                </div>
+                <div class="rencai_art">1、主导产品与解决方案体系的软件配置管理和硬件配置管理能力建设，引入业界最佳实践和方法论，打造产品级配置管理综合竞争力，主导中长期规划设计...</div>
+            </div>
+            <div class="rencai_mid3">
+                <div class="rencai_mid4">
+                    <div class="expert">产品数据管理专家</div>
+                    <div>技术类</div>
+                    <div>中国/深圳</div>
+                    <div>产品与解决方案质量与运营部</div>
+                </div>
+                <div class="rencai_art">1、主导产品与解决方案体系的软件配置管理和硬件配置管理能力建设，引入业界最佳实践和方法论，打造产品级配置管理综合竞争力，主导中长期规划设计...</div>
+            </div>
+            <div class="rencai_mid3">
+                <div class="rencai_mid4">
+                    <div class="expert">产品数据管理专家</div>
+                    <div>技术类</div>
+                    <div>中国/深圳</div>
+                    <div>产品与解决方案质量与运营部</div>
+                </div>
+                <div class="rencai_art">1、主导产品与解决方案体系的软件配置管理和硬件配置管理能力建设，引入业界最佳实践和方法论，打造产品级配置管理综合竞争力，主导中长期规划设计...</div>
+            </div>
+            <div class="rencai_mid3">
+                <div class="rencai_mid4">
+                    <div class="expert">产品数据管理专家</div>
+                    <div>技术类</div>
+                    <div>中国/深圳</div>
+                    <div>产品与解决方案质量与运营部</div>
+                </div>
+                <div class="rencai_art">1、主导产品与解决方案体系的软件配置管理和硬件配置管理能力建设，引入业界最佳实践和方法论，打造产品级配置管理综合竞争力，主导中长期规划设计...</div>
+            </div>
+            <div class="rencai_mid3">
+                <div class="rencai_mid4">
+                    <div class="expert">产品数据管理专家</div>
+                    <div>技术类</div>
+                    <div>中国/深圳</div>
+                    <div>产品与解决方案质量与运营部</div>
+                </div>
+                <div class="rencai_art">1、主导产品与解决方案体系的软件配置管理和硬件配置管理能力建设，引入业界最佳实践和方法论，打造产品级配置管理综合竞争力，主导中长期规划设计...</div>
+            </div> -->
+        </div>
+    </div>
+    <!-- 底部 -->
+    <!-- 底部 -->
+    <!--#include file="footer.html"-->
+
+</body>
+<script src="js/swiper.js"></script>
+<script>
+    $(".navActive").css('background-color', '#DF2525');
+    var mySwiper = new Swiper('.swiper-container', {
+        loop: true,
+        autoplay: true,
+        parallax: true,
+        // pagination: {
+        //     el: '.swiper-pagination',
+
+        // },
+        // 如果需要前进后退按钮
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    })
+
+</script>
+
+</html>

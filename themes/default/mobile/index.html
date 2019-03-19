@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>三强塑料</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <!-- swiper4 -->
+    <script src="js/swiper4.min.js"></script>
+    <link rel="stylesheet" href="css/swiper4.min.css.css">
+    <script src="js/shoutao.js"></script>
+</head>
+
+<body>
+    <div class="banner-1">
+        <div class="swiper">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!--form:{table="broadcast" order="id desc" limit="10"}-->
+                    <?php $data=unserialize($form['broadcast_pic']);?>
+                    <?php foreach($data as $key => $value):?>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <img src="{$value['url']}">
+                        </a>
+                    </div>
+                    <?php endforeach;?>
+                    <!--/form-->
+                </div>
+            </div>
+            <!-- <div class="swiper-pagination"></div> -->
+        </div>
+    </div>
+    <div class="middle_div">
+        <div class="middle_div1">
+            <a href="{$curl.3}"><img src="images/product_ entry.png" alt=""></a>
+            <a href="{$curl.5}"><img src="images/talent _recruitment.png" alt=""></a>
+            <a href="{$curl.2}"><img src="images/company_purpose.png" alt=""></a>
+        </div>
+    </div>
+    <div class="index_box">
+        <div class="middle_div2">
+            <div class="about_us">
+                <img src="images/about_us.png" alt="">
+            </div>
+            <div class="about_logo">
+                <img src="images/about.png" alt="">
+            </div>
+            <div class="about_container">
+                <div class="about_content">
+                    佛山市顺德区杏坛镇三强塑料厂位于中国塑料重镇杏坛镇，从2000年初至今一直专注于塑料树脂PBT，PC及TPEE的研究、开发与制造工作。经过多年的生产经营，本厂一直保持稳健经营、质量第一的宗旨，从2010年开始获得一般纳税人资格，现拥有两座厂房，专业生产各档次的PBT、PC工程塑料以及TPEE热塑性弹性体产品。
+                </div>
+            </div>
+            <div class="about_bottom">
+                <div class="more_img"><img src="__TPL__images/duixiang.png" alt=""></div>
+                <div class="botton"><button class="more"><a href="{$curl.2}">了解更多</a></button></div>
+            </div>
+        </div>
+        <div class="product_box_1">
+            <div class="product_header_logo">
+                <img src="images/product_header_logo.png" alt="">
+            </div>
+            <div class="produ_show_box">
+                <div class="produ_show"><img src="images/xilie.png" alt="">
+                    <p>工程塑料</p>
+                </div>
+                <div class="produ_show"><img src="images/xilie.png" alt="">
+                    <p>通用塑料</p>
+                </div>
+                <div class="produ_show"><img src="images/xilie.png" alt="">
+                    <p>再生塑料</p>
+                </div>
+                <div class="produ_show"><img src="images/xilie.png" alt="">
+                    <p>塑胶原料</p>
+                </div>
+                <div class="produ_show"><img src="images/xilie.png" alt="">
+                    <p>橡胶原料</p>
+                </div>
+                <div class="produ_show"><img src="images/add_product.png" alt="">
+                    <p><a href="{$curl.3}">更多产品</a></p>
+                </div>
+                <div class="product_list">
+                    <!--list:{table="content" type="sub" cid="3" order="updatetime desc" limit="4"}-->                    
+                    <div class="product_info">
+                        <div class="product_logo"><img src="{$list.image}" alt=""></div>
+                        <div class="tpee">
+                            <div class="tpee1">
+                                <p class="tpee_p1">{$list.title}</p>
+                                <p class="tpee_p2">{$list.description}</p>
+                            </div>
+                            <div class="jiantou">
+                                <a href="{$list.curl}"><img src="images/jiantou.png" style="width:22px;height:22px;" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                <!--/list-->
+                </div>
+            </div>
+        </div>
+        <div class="yewu_box">
+            <div>
+                <span class="sqyewu1">三强业务</span><span class="business">BUSINESS</span>
+            </div>
+            <div class="hr"></div>
+            <div class="yewu">
+                <div class="yewuson active">
+                    <img src="images/guonei.png" alt="">
+                    <p class="yewu3">国内业务</p>
+                    <img class="duobianxing currenti" src="images/duobianxing.png" alt="">
+                </div>
+                <div class="yewuson">
+                    <img src="images/waimao.png" alt="">
+                    <p class="yewu3">外贸业务</p>
+                    <img class="duobianxing" src="images/duobianxing.png" alt="">
+                </div>
+                <div class="yewuson">
+                    <img src="images/guowai.png" alt="">
+                    <p class="yewu3">国外业务</p>
+                    <img class="duobianxing" src="images/duobianxing.png" alt="">
+                </div>
+                <div class="yewuson">
+                    <img src="images/guoneihezuohuoban.png" alt="">
+                    <p class="yewu3">国外合作伙伴</p>
+                    <img class="duobianxing" src="images/duobianxing.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="waimao yewuactive">
+            <div class="maowai1">
+                <div class="waimao2">
+                    <!-- <p class="waimaohr"></p>
+                        <div class="waimaoyewu">国内业务</div> -->
+                    <div class="yewu_box2">
+                        <div class="hengxian"></div>
+                        <div class="guoneiyewu">
+                            国内业务
+                        </div>
+                    </div>
+                </div>
+                <div class="waimao5"><img src="__TPL__images/juxing.png"><span
+                        class="waimao3">本厂拥有业界领先的生产工艺车间及合作生产车间，并且拥有专业的检测实验室及研发中心。
+                    </span></div>
+                <div class="waimao5"><img src="__TPL__images/juxing.png"><span
+                        class="waimao3">拥有经验丰富的产品工程师与工艺工程师，专业的销售和售后团队，将持续为客户提供高品质的产品、售后服务和技术支持。</span></div>
+                <div class="waimao5"><img src="__TPL__images/juxing.png"><span class="waimao3">国内现有合作客户 佛山照明、华艺灯饰、美的集团等。
+                        业务地区有广东 厦门 浙江 广西 湖南。</span></div>
+            </div>
+            <div class="yewumap">
+                <img src="images/map.png" alt="" srcset="">
+            </div>
+        </div>
+        <div class="waimao">
+            <div class="maowai1">
+                <div class="waimao2">
+                    <!-- <p class="waimaohr"></p>
+                                <div class="waimaoyewu">国内业务</div> -->
+                    <div class="yewu_box2">
+                        <div class="hengxian"></div>
+                        <div class="guoneiyewu">
+                            外贸业务
+                        </div>
+                    </div>
+                </div>
+                <div class="waimao5"><img src="__TPL__images/juxing.png"><span class="waimao3">外贸业务 ： 包括 德国 英国 韩国 日本 越南
+                        泰国 马来西亚 香港
+                    </span></div>
+                <div class="waimao5"><img src="__TPL__images/juxing.png"><span class="waimao3">外贸业务： 英国当地 SQ Plastics
+                        Ltd 贸易公司 德国当地 Dahua</span></div>
+                <div class="waimao5"><img src="__TPL__images/juxing.png"><span class="waimao3">International Handels
+                        GmbH 公司等几家公司 拥有大量国外废塑料资源可对接全球各大港口
+                        业务地区有广东 厦门 浙江 广西 湖南。</span></div>
+            </div>
+            <div class="yewumap">
+                <img src="images/map.png" alt="" srcset="">
+            </div>
+        </div>
+        <div class="waimao">
+            <div class="maowai1">
+                <div class="waimao2">
+                    <div class="yewu_box2">
+                        <div class="hengxian"></div>
+                        <div class="guoneiyewu">
+                            国外业务
+                        </div>
+                    </div>
+                </div>
+                <div class="waimao5"><img src="__TPL__images/juxing.png"><span class="waimao3">越南 泰国 马来西亚 韩国
+                    </span></div>
+                <div class="waimao5"><img src="__TPL__images/juxing.png"><span class="waimao3">各有厂房每月都有大量货物进口回来</span>
+                </div>
+            </div>
+            <div class="yewumap">
+                <img src="images/map.png" alt="" srcset="">
+            </div>
+        </div>
+        <div class="waimao">
+            <div class="maowai1">
+                <div class="waimao2">
+                    <div class="yewu_box2">
+                        <div class="hengxian"></div>
+                        <div class="guoneiyewu">
+                            国外合作伙伴
+                        </div>
+                    </div>
+                </div>
+                <div class="waimao5"><img src="__TPL__images/juxing.png"><span class="waimao3">国外合作伙伴 ： 德国 韩国 英国
+                    </span></div>
+                <div class="waimao5"><img src="__TPL__images/juxing.png"><span class="waimao3">国外合作伙伴 ： 德国 英国 贸易公司
+                        韩国是合作伙伴把废塑料加工好再回国内</span></div>
+            </div>
+            <div class="yewumap">
+                <img src="images/map.png" alt="" srcset="">
+            </div>
+        </div>
+        <div class="new_box">
+            <div class="new_img">
+                <img src="images/new.png" alt="" srcset="">
+                <div class="new_category">
+                    <div class="news new_current">公司新闻<div class="newi new_active"><img src="images/new_active.png" alt=""></div></div>
+                    <div class="news">行业新闻<div class="newi"><img src="images/new_active.png" alt=""></div></div>                                        
+                </div>
+            </div>
+            <div class="xinwen xinwen_active">
+                <!--list:{table="content" type="sub" cid="4" order="updatetime desc" limit="3"}-->
+                <div class="new_son">
+                    <div class="new_left">
+                        <a href="{$list.aurl}">
+                            <div class="new_title">{$list.title}</div>
+                            <div class="new_date"> <img src="images/calendar.png" alt="" srcset=""><span>{$list.inputtime
+                                    time="Y-m-d"}</span></div>
+                        </a>
+                    </div>
+                    <div class="new_right">
+                        <img src="{$list.image}" alt="" srcset="">
+                    </div>
+                </div>
+                <!--/list-->                
+            </div>
+            <div class="xinwen">
+                <div class="new_son">
+                    <div class="new_left">
+                        <div class="new_title">111111热塑性聚酯弹性体(TPEE)性能与应用</div>
+                        <div class="new_date"> <img src="images/calendar.png" alt="" srcset=""><span>2018-12-28</span></div>
+                    </div>
+                    <div class="new_right">
+                        <img src="images/newinfo_img.png" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="new_son">
+                    <div class="new_left">
+                        <div class="new_title">热塑性聚酯弹性体(TPEE)性能与应用</div>
+                        <div class="new_date"> <img src="images/calendar.png" alt="" srcset=""><span>2018-12-28</span></div>
+                    </div>
+                    <div class="new_right">
+                        <img src="images/newinfo_img.png" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="new_son">
+                    <div class="new_left">
+                        <div class="new_title">热塑性聚酯弹性体(TPEE)性能与应用</div>
+                        <div class="new_date"> <img src="images/calendar.png" alt="" srcset=""><span>2018-12-28</span></div>
+                    </div>
+                    <div class="new_right">
+                        <img src="images/newinfo_img.png" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+            <div class="viewall_box">
+                <a class="viewall" href="{$curl.4}">查看全部</a>
+            </div>
+        </div>
+        <div class="link_box">
+            <div class="link_son">
+                <div class="lianjie">
+                    <p class="sqyewu1">友情链接</p><img src="images/lianjie.png" alt="">
+                </div>
+                <p class="business">合作伙伴</p>
+            </div>
+            <div class="hr"></div>
+            <div class="link_buttons">
+                <div class="link_content">
+                    <!--form:{table="img" order="id desc" limit="6"}-->
+                    <?php $imgs = unserialize($form['img']);?>
+                    <!--/form-->
+                    <?php foreach($imgs as $v):?>
+                    <a href=""><img src="{$v['url']}" alt="" srcset=""></a>
+                    <?php endforeach;?>
+                    <a href=""><img src="images/meidi_link.png" alt="" srcset=""></a>
+                    <a href=""><img src="images/meidi_link.png" alt="" srcset=""></a>
+                    <a href=""><img src="images/meidi_link.png" alt="" srcset=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#include file="footer.html"-->
+</body>
+
+</html>
+<script>
+    window.onload = function () {
+        // 顶部swiper
+        var indexTopSwiper = new Swiper('.swiper-container', {
+            loop: true, // 循环模式选项
+
+            // 自动播放
+            autoplay: {
+                delay: 5000,
+                stopOnLastSlide: false,
+                disableOnInteraction: true,
+            },
+
+            // 分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        })
+        // 三强业务切换
+        let yewu = document.querySelector('.yewu'),
+            yewusonlist = document.querySelectorAll('.yewuson'),
+            waimao = document.querySelectorAll('.waimao'),
+            duobianxing = document.querySelectorAll('.duobianxing');
+        for (var i = 0; i < yewusonlist.length; i++) {
+            yewusonlist[i].index = i;//给每个按钮添加一个自定义属性，存的是他们对应的索引值
+            yewusonlist[i].onclick = function () {
+                for (var i = 0; i < yewusonlist.length; i++) {
+                    waimao[i].className = 'waimao';
+                    yewusonlist[i].className = 'yewuson';
+                    duobianxing[i].className = 'duobianxing';
+                }
+                waimao[this.index].className = 'waimao yewuactive';
+                duobianxing[this.index].className = 'duobianxing currenti';
+                yewusonlist[this.index].className = 'yewuson active';
+            }
+        }
+        // 
+        let news = document.querySelectorAll('.news'),
+            newi = document.querySelectorAll('.newi'),
+            xinwen = document.querySelectorAll('.xinwen');
+        for (var i = 0; i < news.length; i++) {
+            news[i].index = i;//给每个按钮添加一个自定义属性，存的是他们对应的索引值
+            news[i].ontouchstart = function () {
+                for (var i = 0; i < news.length; i++) {
+                    xinwen[i].className = 'xinwen';
+                    news[i].className = 'news';
+                    newi[i].className = 'newi';
+                }
+                xinwen[this.index].className = 'xinwen xinwen_active';
+                newi[this.index].className = 'newi new_active';
+                news[this.index].className = 'news new_current';
+            }
+        }
+    }
+</script>

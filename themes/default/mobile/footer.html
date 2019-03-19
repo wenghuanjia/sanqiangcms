@@ -1,0 +1,20 @@
+<div class="nav_box">
+    <div class="nav_list">
+        <!-- <a href=""><img src="images/product_nav_1.png" alt="" srcset="">首页</a>
+        <a href=""><img src="images/product_nav_2.png" alt="" srcset="">产品</a>
+        <a href=""><img src="images/product_nav_3.png" alt="" srcset="">新闻</a>
+        <a href=""><img src="images/product_nav_4.png" alt="" srcset="">招聘</a>
+        <a href=""><img src="images/product_nav_5.png" alt="" srcset="">三强</a> -->
+        <!--list:{table="category" type="top" order="cid asc" limit="10"}-->
+        <!-- <a href="{$list.curl}"><img src="{$list.image}" alt="" srcset="">{$list.name}</a> -->
+            <a href="{$list.curl}" class="list list_current" data-id="{$list.cid}">
+                <span style="display: none;">{$list.cid}</span>
+                <img src="{$list.image}" alt="">{$list.name}
+            </a>
+        <!--/list-->
+    </div>
+</div>
+<script>
+    var id = '{$top_category["cid"]}' || 1; 
+    // $('.nav_box .nav_list a[data-id=' + id + ']').addClass('active');
+</script>

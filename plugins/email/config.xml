@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+<name>邮件通知</name>
+<file>email</file>
+<ver>1</ver>
+<author>halo</author>
+<info>email</info>
+<prefix>dc_</prefix>
+</config>

@@ -1,0 +1,149 @@
+<style>
+#dbck span{ height:30px; line-height:30px; padding:0px 10px; width:240px; display:block; float:left}
+</style>
+<div class="page_function">
+  <div class="info">
+    <h3>邮件通知</h3>
+    <small>及时收到表单信息</small> </div>
+</div>
+
+<div class="page_main">
+  <form action="__APP__/email/save/time-time()" id="form" name="form" method="post">
+  <div class="page_form">
+    <div class="page_table form_table" id="tab1">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="120">SMTP邮箱</td>
+          <td width="300"><input name="SMTP_USERNAME" type="text" class="text_value" id="SMTP_USERNAME" value="{$config_array.SMTP_USERNAME}" /></td>
+          <td>{<span>$</span>sys.SMTP_USERNAME} SMTP邮箱</td>
+        </tr>
+
+        <tr>
+          <td width="120">SMTP邮箱账号</td>
+          <td width="300"><input name="SMTP_FROM_TO" type="text" class="text_value" id="SMTP_FROM_TO" value="{$config_array.SMTP_FROM_TO}" /></td>
+          <td>{<span>$</span>sys.SMTP_FROM_TO} SMTP邮箱账号 一般跟SMTP邮箱一样</td>
+        </tr>
+
+        <tr>
+          <td width="120">SMTP邮箱密码</td>
+          <td width="300"><input name="SMTP_PASSWORD" type="password" class="text_value" id="SMTP_PASSWORD" value="{$config_array.SMTP_PASSWORD}" /></td>
+          <td>{<span>$</span>sys.SMTP_PASSWORD} SMTP邮件密码</td>
+        </tr>
+
+        <tr>
+          <td width="120">目标邮箱</td>
+          <td width="300"><input name="MAIL_SEND_USER" type="text" class="text_value" id="MAIL_SEND_USER" value="{$config_array.MAIL_SEND_USER}" /></td>
+          <td>{<span>$</span>sys.MAIL_SEND_USER} 接收邮件通知</td>
+        </tr>
+
+        <tr>
+          <td width="120">SMTP服务器</td>
+          <td width="300"><input name="SMTP_HOST" type="text" class="text_value" id="SMTP_HOST" value="{$config_array.SMTP_HOST}" /></td>
+          <td>{<span>$</span>sys.SMTP_HOST} 一般是smtp.***.com</td>
+        </tr>
+
+        <tr>
+          <td width="120">SMTP邮箱端口</td>
+          <td width="300"><input name="MAIL_PORT" type="text" class="text_value" id="MAIL_PORT" value="{$config_array.MAIL_PORT}" /></td>
+          <td>{<span>$</span>sys.MAIL_PORT} 接收邮件通知(一般是25)</td>
+        </tr>
+      </table>
+      <div class="form_submit">
+        <button type="submit" class="button">保存</button>
+      </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+//表单选项
+langopen({$config_array.LANG_OPEN});
+function langopen(type){
+  if(type){
+    $('.lang').show();
+  }else{
+    $('.lang').hide();
+  }
+}
+htmlcache({$config_array.HTML_CACHE_ON});
+function htmlcache(type){
+  if(type){
+    $('.htmlcache').show();
+  }else{
+    $('.htmlcache').hide();
+  }
+}
+mobileopen({$config_array.MOBILE_OPEN});
+function mobileopen(type){
+  if(type){
+    $('.mobile').show();
+  }else{
+    $('.mobile').hide();
+  }
+}
+//提交表单
+saveform({success:function(msg){tip({msg:msg})},failure:function(msg){tip({msg:msg})}});
+//tab菜单
+$("#tab").idTabs();
+//模板列表
+function tpl_list(id){
+  var list = [ 
+  <!--foreach:{$tpl_list $vo}-->
+  {
+    href: "javascript:;\" onclick=\"tpl_val('"+id+"','{$vo}');\"",
+    text: "{$vo}"
+  },
+  <!--{/foreach}-->
+  {
+    text: "请选择模板，支持子目录"
+  }];
+  return list;
+  
+}
+function themes_list(id){
+  var list = [ 
+  <!--foreach:{$themes_list $vo}-->
+  {
+    href: "javascript:;\" onclick=\"tpl_val('"+id+"','themes/{$vo}/');\"",
+    text: "themes/{$vo}/"
+  },
+  <!--{/foreach}-->
+  {
+    text: "请选择使用模板"
+  }];
+  return list;
+}
+//模板赋值
+function tpl_val(id,val){
+  $('#'+id).val(val);
+  $.powerFloat.hide();
+  return false;
+}
+function tpl_power(id){
+  $("#"+id).powerFloat({
+    width: 302,
+    eventType: "click",
+    edgeAdjust:false,
+    target:tpl_list(id),
+    targetMode: "list"
+  });
+  
+}
+//页面执行
+$(document).ready(function() {
+  //模板选择
+  $("#TPL_TEMPLATE_PATH").powerFloat({
+    width: 302,
+    eventType: "click",
+    edgeAdjust:false,
+    target:themes_list('TPL_TEMPLATE_PATH'),
+    targetMode: "list"
+  });
+  tpl_power("TPL_INDEX");
+  tpl_power("TPL_COMMON");
+  tpl_power("TPL_SEARCH");
+  tpl_power("TPL_TAGS");
+  tpl_power("TPL_TAGS_INDEX");
+});
+</script>
+</script>

@@ -1,0 +1,8 @@
+1 修改文件admin\model\uploadModel.class.php          增加获取已用空间代码
+2 修改文件admin\module\editor_uploadMod.class.php    新增代码
+3 修改文件admin\module\indexMod.class.php            新增代码
+4 修改文件admin\template\editor\editor_upload.html   新增代码
+5 修改文件admin\template\editor\image_upload.html    新增代码
+6 修改文件admin\template\index\home.html             新增代码
+7 修改文件inc\config.php                             新增又拍云设置代码
+8 新增文件admin\module\Upform.php                    新增又拍云类文件

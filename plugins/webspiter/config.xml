@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+<name>网站统计</name>
+<file>webspiter</file>
+<ver>1</ver>
+<author>halo</author>
+<info>网站统计</info>
+<prefix>dc_</prefix>
+</config>

@@ -1,0 +1,76 @@
+<script src="http://cdn.bootcss.com/Chart.js/1.0.2/Chart.min.js"></script>
+<script>
+var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
+var lineChartData = {$data};
+
+var randomScalingFactor2 = function(){ return Math.round(Math.random()*100)};
+var spiterData = {$spiter};
+
+window.onload = function(){
+var ctx = document.getElementById("canvas").getContext("2d");
+window.myLine = new Chart(ctx).Line(lineChartData, {
+	responsive: true
+});
+var spiter = document.getElementById("spiter").getContext("2d");
+window.myLine = new Chart(spiter).Line(spiterData, {
+	responsive: true
+});
+}
+
+</script>
+<style type="text/css">
+	body{
+		padding-top:20px;
+	}
+	.list{
+		margin-bottom: 10px;
+	}
+	.list .head{
+		    
+    		padding-left: 20px;
+	}
+	.head h1{
+		margin-bottom:5px;
+	}
+	.head font{
+		padding:5px;
+		background:#0ae;
+		color: #fff
+	}
+	.panel{
+		background:#fff;
+		padding:10px;
+
+	}
+	#block{
+		border-bottom:2px #f1f1f1 solid;
+	}
+</style>
+<script type="text/javascript"></script>
+<div class="list">
+	<div class="head">
+		<h1>网站访问量统计(次)</h1>
+	</div>
+	
+	<div class="panel" id="block">
+		<canvas id="canvas" width="600"></canvas>
+	</div>
+</div>
+
+<div class="list">
+	<div class="head">
+		<h1>搜索引擎访问量统计(次)</h1>
+		<font style="background:#0ae">百度</font>
+		<font style="background:#2c7">谷歌</font>
+		<font style="background:#f60">搜搜</font>
+	</div>
+	
+	
+	<div class="panel" id="block">
+		<canvas id="spiter" width="600"></canvas>
+	</div>
+</div>
+
+
+
+	

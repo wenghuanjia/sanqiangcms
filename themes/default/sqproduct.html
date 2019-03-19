@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--#include file="resources.html"-->
+    <!-- <script src="main.js"></script> -->
+</head>
+
+<body>
+    <!--#include file="head.html"-->
+    <!-- 中间部分 -->
+    <!--form:{table="productview_banner" order="id desc" limit="10"}-->
+    <!-- <div class="hezuo">
+        <img src="{$form.productview_banner_img}" alt="">
+    </div> -->
+    <!--/form-->
+    <div class="hezuo">
+        <img src="__TPL__images/product.png" alt="">
+    </div>
+    <div class="news_middle">
+        <div class="news_mid1">
+            <a href="{$curl.1}">首页</a>
+            <span>></span>
+            <a href="#">产品展示</a>
+        </div>
+    </div>
+
+    <div class="chanpin_list">产品展示</div>
+    <div class="chanpin_foot">
+        <div class="chanpin_list1">
+            <div class="chanpin_list2"><img src="__TPL__images/chanpinzuo.png" alt=""></div>
+            <div class="chanpin_title1">                
+                <!--vo:{table="category" type="sub" order="cid asc" pid="3" limit="5"}-->
+                <div class="chanpin_title">{$vo.subname}</div>
+                <!--/vo-->
+            </div>
+            <div class="chanpin_list2"><img src="__TPL__images/chanpinyou.png" alt=""></div>
+        </div>
+        <div class="chanpin_list3 chanpin_active">
+            <div class="chanpin_name">
+                <div class="black black_active">TPEE-黑色切粒55D</div>
+                <div class="black">TPEE-原色圆粒63D</div>
+            </div>
+            <div class="product product_active">
+                <div class="chanpin_name_pic">
+                    <div class="chanpin_pic"><img src="__TPL__images/chanpin_pic.jpg" alt=""></div>
+                </div>
+                <div class="chanpinname_pic1">
+                    <div class="chanpinname_pic2">TPEE-黑色切粒55D</div>
+                    <div>
+                        <hr class="chanpinname_pic3_hr">
+                    </div>
+                    <div class="chanpinname_pic3">
+                        <div class="chanpinname_pic3_item chanpinname_pic3_item1">
+                            <div>26</div>
+                            <div class="zhishu">
+                                拉伸强度(Mpa)
+                                <div class="wenhao">[?]
+                                    <div class="wenhao_detail">
+                                        测试标准：GB/T1040-2006
+                                        测试条件：50mm/min
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chanpinname_pic3_item chanpinname_pic3_item2">
+                            <div>550</div>
+                            <div class="zhishu">
+                                断裂伸长率(%)
+                                <div class="wenhao">[?]
+                                    <div class="wenhao_detail">
+                                        测试标准：GB/T1040-2006
+                                        测试条件：50mm/min
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chanpinname_pic3_item chanpinname_pic3_item3">
+                            <div>55D</div>
+                            <div class="zhishu">硬度(Shore D)
+                                <div class="wenhao">[?]
+                                    <div class="wenhao_detail">
+                                        测试标准：GB/T1040-2006
+                                        测试条件：50mm/min
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chanpinname_pic3_item chanpinname_pic3_item4">
+                            <div>30~50</div>
+                            <div class="zhishu">熔融指数(g/10min)
+                                <div class="wenhao">[?]
+                                    <div class="wenhao_detail">
+                                        测试标准：GB/T1040-2006
+                                        测试条件：50mm/min
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="chanpin_name_pic">
+                    <!-- <div class="chanpin_pic"><img src="{$info.image}" width="472px" height="302px" alt=""></div> -->
+                    <div class="chanpin_pic"><img src="__TPL__images/chanpin_pic.jpg" alt=""></div>
+                </div>
+                <div class="chanpinname_pic1">
+                    <div class="chanpinname_pic2">TPEE-原色圆粒63D</div>
+                    <div>
+                        <hr class="chanpinname_pic3_hr">
+                    </div>
+                    <div class="chanpinname_pic3">
+                        <div class="chanpinname_pic3_item chanpinname_pic3_item1">
+                            <div>26</div>
+                            <div class="zhishu">
+                                拉伸强度(Mpa)
+                                <div class="wenhao">[?]
+                                    <div class="wenhao_detail">
+                                        测试标准：GB/T1040-2006
+                                        测试条件：50mm/min
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chanpinname_pic3_item chanpinname_pic3_item2">
+                            <div>550</div>
+                            <div class="zhishu">
+                                断裂伸长率(%)
+                                <div class="wenhao">[?]
+                                    <div class="wenhao_detail">
+                                        测试标准：GB/T1040-2006
+                                        测试条件：50mm/min
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chanpinname_pic3_item chanpinname_pic3_item3">
+                            <div>55D</div>
+                            <div class="zhishu">硬度(Shore D)
+                                <div class="wenhao">[?]
+                                    <div class="wenhao_detail">
+                                        测试标准：GB/T1040-2006
+                                        测试条件：50mm/min
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chanpinname_pic3_item chanpinname_pic3_item4">
+                            <div>30~50</div>
+                            <div class="zhishu">熔融指数(g/10min)
+                                <div class="wenhao">[?]
+                                    <div class="wenhao_detail">
+                                        测试标准：GB/T1040-2006
+                                        测试条件：50mm/min
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chanpin_list3">
+            <div class="chanpin_name">
+                <div class="black black_active">TPEE-黑色切粒22D</div>
+                <div class="black">TPEE-原色圆粒23D</div>
+            </div>
+            <div class="product product_active">
+                <div class="chanpin_name_pic">
+                    <!-- <div class="chanpin_pic"><img src="{$info.image}" width="472px" height="302px" alt=""></div> -->
+                    <div class="chanpin_pic"><img src="__TPL__images/chanpin_pic.jpg" alt=""></div>
+                </div>
+                <div class="chanpinname_pic1">
+                    <div class="chanpinname_pic2">TPEE-黑色切粒22D</div>
+                    <div>
+                        <hr class="chanpinname_pic3_hr">
+                    </div>
+                    <div class="chanpinname_pic3">
+                        <div class="chanpinname_pic3_item chanpinname_pic3_item1">
+                            <div>26</div>
+                            <div class="zhishu">
+                                拉伸强度(Mpa)
+                                <div class="wenhao">[?]
+                                    <div class="wenhao_detail">
+                                        测试标准：GB/T1040-2006
+                                        测试条件：50mm/min
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chanpinname_pic3_item chanpinname_pic3_item2">
+                            <div>550</div>
+                            <div class="zhishu">
+                                断裂伸长率(%)
+                                <div class="wenhao">[?]
+                                    <div class="wenhao_detail">
+                                        测试标准：GB/T1040-2006
+                                        测试条件：50mm/min
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chanpinname_pic3_item chanpinname_pic3_item3">
+                            <div>55D</div>
+                            <div class="zhishu">硬度(Shore D)
+                                <div class="wenhao">[?]
+                                    <div class="wenhao_detail">
+                                        测试标准：GB/T1040-2006
+                                        测试条件：50mm/min
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chanpinname_pic3_item chanpinname_pic3_item4">
+                            <div>30~50</div>
+                            <div class="zhishu">熔融指数(g/10min)
+                                <div class="wenhao">[?]
+                                    <div class="wenhao_detail">
+                                        测试标准：GB/T1040-2006
+                                        测试条件：50mm/min
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="chanpin_name_pic">
+                    <!-- <div class="chanpin_pic"><img src="{$info.image}" width="472px" height="302px" alt=""></div> -->
+                    <div class="chanpin_pic"><img src="__TPL__images/chanpin_pic.jpg" alt=""></div>
+                </div>
+                <div class="chanpinname_pic1">
+                    <div class="chanpinname_pic2">TPEE-原色圆粒23D</div>
+                    <div>
+                        <hr class="chanpinname_pic3_hr">
+                    </div>
+                    <div class="chanpinname_pic3">
+                        <div class="chanpinname_pic3_item chanpinname_pic3_item1">
+                            <div>26</div>
+                            <div class="zhishu">
+                                拉伸强度(Mpa)
+                                <div class="wenhao">[?]
+                                    <div class="wenhao_detail">
+                                        测试标准：GB/T1040-2006
+                                        测试条件：50mm/min
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chanpinname_pic3_item chanpinname_pic3_item2">
+                            <div>550</div>
+                            <div class="zhishu">
+                                断裂伸长率(%)
+                                <div class="wenhao">[?]
+                                    <div class="wenhao_detail">
+                                        测试标准：GB/T1040-2006
+                                        测试条件：50mm/min
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chanpinname_pic3_item chanpinname_pic3_item3">
+                            <div>55D</div>
+                            <div class="zhishu">硬度(Shore D)
+                                <div class="wenhao">[?]
+                                    <div class="wenhao_detail">
+                                        测试标准：GB/T1040-2006
+                                        测试条件：50mm/min
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chanpinname_pic3_item chanpinname_pic3_item4">
+                            <div>30~50</div>
+                            <div class="zhishu">熔融指数(g/10min)
+                                <div class="wenhao">[?]
+                                    <div class="wenhao_detail">
+                                        测试标准：GB/T1040-2006
+                                        测试条件：50mm/min
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wenhao_detail">测试标准：GB/T1040-2006
+        测试条件：50mm/min</div>
+    <!-- 底部 -->
+    <!-- 底部 -->
+    <!--#include file="footer.html"-->
+</body>
+<script src="js/swiper.js"></script>
+<script>
+    $('.wenhao_detail').hide();
+
+    $('.chanpin_title1').children(':first').css({ "background-color": "#0071b6", "color": "#ffffff" });
+
+    $(".wenhao").hover(function () {
+        $(this).children().show();
+    }, function () {
+        $(this).children().hide();
+    })
+    $('.chanpin_title').click(function () {
+        $('.chanpin_title').css({ "background-color": "#f6f5f8", "color": "#8f8d93" });
+        $(this).css({ "background-color": "#0071b6", "color": "#ffffff" });
+        let index = $(this).index();
+        $('.chanpin_list3').eq(index).addClass('chanpin_active').siblings().removeClass('chanpin_active');
+    });
+    $('.black').click(function(){
+        $(this).addClass('black_active').siblings().removeClass('black_active');
+        let index = $(this).index();
+        $(this).parent().siblings('.product').eq(index).addClass('product_active').siblings().removeClass('product_active');
+    })
+</script>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--#include file="resources.html"-->
+    <!-- <script src="main.js"></script> -->
+</head>
+
+<body>
+    <!--#include file="head.html"-->
+    <!-- 中间部分 -->
+    <div class="news_middle">
+        <div class="news_mid1">
+            <a href="{$curl.1}">首页</a>
+            <span>></span>
+            <a href="{$curl.4}">新闻动态</a>
+            <span>></span>
+            <a href="{$curl.4}">公司动态</a>
+        </div>
+    </div>
+
+    <div class="news_list">
+
+        <div class="news_list_title_date">
+            <div class="news_list_title">{$info.title}</div>
+            <div class="news_list_date">发布时间：{$info.inputtime time="Y/m/d H:i:s"}</div>
+        </div>
+        <div class="news_article">
+            <div>
+                <!-- 扩展内容添加写法 -->
+                {$info.content}
+                <!-- {$info.content} -->
+                <!-- 在3月20日泰国橡胶工业永续发展研究座谈会上，副总理巴金上将指出，泰国政府致力于完善泰国境内橡胶加工产业和提升橡胶使用量，在未来10年内，每年的橡胶加工比例提升至25%～30%。
+                　　据了解，泰国生产出来的橡胶目前每年的加工比例为15%～18%，另外的80%出口海外。
+                　　为此，泰国橡胶局与泰国研究基金办事处签署合作协议，合力构建橡胶研究与合作网络。对橡胶发展前景开展研究和制定战略规划，将研究成果切实运用到生产当中。
+                　　目前，泰国政府安全机构、警方以及军方不少设备的生产和制造离不开橡胶，但都需要依赖进口。因此，泰国政府推出促进政策，支持在国内自行加工相关设备以减少资金消耗，相关政策包括促进建设橡胶城(rubber
+                city)、对满足市场需求的新产品研发提供支持等，涵盖医疗、农业、汽车等多个领域。
+                　　此外，政府鼓励外商投资轨道运输工业领域，如桥梁承压垫板、火车铁轨承压垫板、汽车防震系统等。
+                　　巴金上将指出，橡胶开发与研究促进工作获得了泰国橡局上下游的支持，提升国内橡胶加工能力，符合市场价值和需求，进而推动泰国经济进一步取得成长。
+                在3月20日泰国橡胶工业永续发展研究座谈会上，副总理巴金上将指出，泰国政府致力于完善泰国境内橡胶加工产业和提升橡胶使用量，在未来10年内，每年的橡胶加工比例提升至25%～30%。
+                　　据了解，泰国生产出来的橡胶目前每年的加工比例为15%～18%，另外的80%出口海外。
+                　　为此，泰国橡胶局与泰国研究基金办事处签署合作协议，合力构建橡胶研究与合作网络。对橡胶发展前景开展研究和制定战略规划，将研究成果切实运用到生产当中。
+                　　目前，泰国政府安全机构、警方以及军方不少设备的生产和制造离不开橡胶，但都需要依赖进口。因此， -->
+            </div>
+        </div>
+        <div><img src="{$info.xinwen_image}" width="1200px" height="800px" alt=""></div>
+    </div>
+    <!-- 底部 -->
+    <!-- 底部 -->
+    <!--#include file="footer.html"-->
+
+</body>
+<script src="js/swiper.js"></script>
+<script>
+    $(".navActive").css('background-color', '#DF2525');
+    var mySwiper = new Swiper('.swiper-container', {
+        loop: true,
+        autoplay: true,
+        parallax: true,
+        // pagination: {
+        //     el: '.swiper-pagination',
+
+        // },
+        // 如果需要前进后退按钮
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    })
+
+</script>
+
+</html>

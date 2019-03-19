@@ -1,0 +1,68 @@
+<!doctype html>
+<html> 
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<script src="js/shoutao.js"></script>
+	</head>
+	<style type="text/css">
+	</style>
+	<header class="nav">
+		<h2>新闻动态</h2>
+	</header>
+	<body>
+		<div class="xinwen_banner">
+			<img src="images/new_03.gif" />
+		</div>
+		<div class="dongtai_body">
+			<div class="gongsidongtai">公司动态</div>
+			<div class="yeneidongtai">业内动态</div>
+		</div>
+		<div class="main">
+			<div class="xinwen_yulantu">
+				<img src="images/new_03.gif" />
+			</div>
+			<!--foreach:{$loop $list}-->
+			<div class="xinwen_list">
+				<a href="{$list.aurl}">
+					<div class="xinwen_bigson">
+						<div class="xinwen_smallson">
+							<div class="xinwen_title">{$list.title}</div>
+							<div class="xinwen_date">{$list.inputtime time="Y-m-d"}</div>
+						</div>
+						<div class="xinwen_img">
+							<img src="{$list.xinwen_image}" />
+						</div>
+					</div>
+				</a>
+			</div>
+			<!--/foreach-->
+		</div>
+		<!-- <div class="xinwen_list">
+			<div class="xinwen_bigson">
+				<div class="xinwen_smallson">
+					<div class="xinwen_title">泰国提升橡胶使用量，1年内占产胶量30%</div>
+					<div class="xinwen_date">2018-12-30</div>
+				</div>
+				<div class="xinwen_img">
+					<img src="images/new_03.gif" />
+				</div>
+			</div>
+		</div>
+		<div class="xinwen_list">
+			<div class="xinwen_bigson">
+				<div class="xinwen_smallson">
+					<div class="xinwen_title">泰国提升橡胶使用量，1年内占产胶量30%</div>
+					<div class="xinwen_date">2018-12-30</div>
+				</div>
+				<div class="xinwen_img">
+					<img src="images/new_03.gif" />
+				</div>
+			</div>
+		</div> -->
+		<!--#include file="footer.html"-->
+	</body>
+</html>

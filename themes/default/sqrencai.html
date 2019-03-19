@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--#include file="resources.html"-->
+    <!-- <script src="main.js"></script> -->
+</head>
+
+<body>
+    <!--#include file="head.html"-->
+
+    <!-- 中间部分 -->
+    <!--form:{table="rencai_banner" order="id desc" limit="10"}-->
+    <div class="hezuo">
+        <img src="{$form.rencai_banner_img}" width="100%" alt="">
+    </div>
+    <!--/form-->
+    <div class="rencai_middle">
+        <div class="rencai_mid1">
+            <a href="">首页</a>
+            <span>></span>
+            <a href="">人才通道</a>
+            <span>></span>
+            <a href="">招聘列表</a>
+        </div>
+    </div>
+    <div class="rencai_mid2">
+        <div>职位名称</div>
+        <div>职位类别</div>
+        <div>工作地点</div>
+        <div>所属部门</div>
+    </div>
+    <!--foreach:{$loop $app}-->
+    <div class="rencai_mid3">
+        <a href="{$app.aurl}">
+            <div class="rencai_mid4">
+                <div class="expert">{$app.title}</div>
+                <div>{$app.copyfrom}</div>
+                <div>{$app.keywords}</div>
+                <div>{$app.subtitle}</div>
+            </div>
+            <div class="rencai_art">{$app.description}</div>
+        </a>
+    </div>
+    <!--/foreach-->
+    <div class="jumpPage">
+        <a class="prePage pre" href="/rencaitongdao/index.html">上一页</a>
+        {$page}
+        <a class="nextPage next" href="/rencaitongdao/index-2.html">下一页</a>
+    </div>
+    
+    <!-- <div class="rencai_mid3">
+        <div class="rencai_mid4">
+            <div class="expert">产品数据管理专家</div>
+            <div>技术类</div>
+            <div>中国/深圳</div>
+            <div>产品与解决方案质量与运营部</div>
+        </div>
+        <div class="rencai_art">1、主导产品与解决方案体系的软件配置管理和硬件配置管理能力建设，引入业界最佳实践和方法论，打造产品级配置管理综合竞争力，主导中长期规划设计...</div>
+    </div>
+    <div class="rencai_mid3">
+        <div class="rencai_mid4">
+            <div class="expert">产品数据管理专家</div>
+            <div>技术类</div>
+            <div>中国/深圳</div>
+            <div>产品与解决方案质量与运营部</div>
+        </div>
+        <div class="rencai_art">1、主导产品与解决方案体系的软件配置管理和硬件配置管理能力建设，引入业界最佳实践和方法论，打造产品级配置管理综合竞争力，主导中长期规划设计...</div>
+    </div>
+    <div class="rencai_mid3">
+        <div class="rencai_mid4">
+            <div class="expert">产品数据管理专家</div>
+            <div>技术类</div>
+            <div>中国/深圳</div>
+            <div>产品与解决方案质量与运营部</div>
+        </div>
+        <div class="rencai_art">1、主导产品与解决方案体系的软件配置管理和硬件配置管理能力建设，引入业界最佳实践和方法论，打造产品级配置管理综合竞争力，主导中长期规划设计...</div>
+    </div>
+    <div class="rencai_mid3">
+        <div class="rencai_mid4">
+            <div class="expert">产品数据管理专家</div>
+            <div>技术类</div>
+            <div>中国/深圳</div>
+            <div>产品与解决方案质量与运营部</div>
+        </div>
+        <div class="rencai_art">1、主导产品与解决方案体系的软件配置管理和硬件配置管理能力建设，引入业界最佳实践和方法论，打造产品级配置管理综合竞争力，主导中长期规划设计...</div>
+    </div>
+    <div class="rencai_mid3">
+        <div class="rencai_mid4">
+            <div class="expert">产品数据管理专家</div>
+            <div>技术类</div>
+            <div>中国/深圳</div>
+            <div>产品与解决方案质量与运营部</div>
+        </div>
+        <div class="rencai_art">1、主导产品与解决方案体系的软件配置管理和硬件配置管理能力建设，引入业界最佳实践和方法论，打造产品级配置管理综合竞争力，主导中长期规划设计...</div>
+    </div> -->
+    <!-- <div class="page1">
+        <div class="pre">上一页</div>
+        <div class="page_a"><a href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a><a
+                href="#">...</a><a href="#">22</a></div>
+        <div class="next">下一页</div>
+    </div> -->
+    <!-- 底部 -->
+    <!-- 底部 -->
+    <!--#include file="footer.html"-->
+
+</body>
+<script>
+
+</script>
+
+</html>

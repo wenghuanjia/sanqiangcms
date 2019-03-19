@@ -1,0 +1,83 @@
+<!doctype html>
+<html> 
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<script src="js/shoutao.js"></script>
+	</head>
+	<header class="nav">
+		<h2>人才招聘</h2>
+	</header>
+	<body>
+		<div class="rencai_content">
+			<img src="images/zhaopin_03.jpg" />
+		</div>
+		<div class="main">
+			<ui class="rencai_list">
+				<!--foreach:{$loop $vo}-->
+				<li class="rencai_son">
+					<div class="content-title">
+						<div class="rencai_name">
+							<a href="{$vo.aurl}">{$vo.title}</a>
+						</div>
+						<div class="rencai_type">技术类</div>
+					</div>
+					<div class="rencai_title">
+						<div class="rencai_title_son">产品与解决方案质量与运营部</div>
+						<div class="rencai_address">
+							<img src="images/weizhi.png" />
+							<div class="rencai_city">中国/深圳</div>
+						</div>
+					</div>
+					<div class="rencai_desc">1、主导产品与解决方案体系的软件配置管理和硬件配置管理能力建设，引入业界最佳实践和...</div>
+				</li>
+				<!--/foreach-->				
+				<!-- <li class="rencai_son">
+					<div class="content-title">
+						<div class="rencai_name">产品数据管理专家</div>
+						<div class="rencai_type">技术类</div>
+					</div>
+					<div class="rencai_title">
+						<div class="rencai_title_son">产品与解决方案质量与运营部</div>
+						<div class="rencai_address">
+							<img src="img/add.png" />
+							<div class="rencai_city">中国/深圳</div>
+						</div>
+					</div>
+					<div class="rencai_desc">1.主导产品与解决方案体系的软件配置管理和硬件配置管理能力建设，引入业界最佳实践和...</div>
+				</li>
+				<li class="rencai_son">
+					<div class="content-title">
+						<div class="rencai_name">产品数据管理专家</div>
+						<div class="rencai_type">技术类</div>
+					</div>
+					<div class="rencai_title">
+						<div class="rencai_title_son">产品与解决方案质量与运营部</div>
+						<div class="rencai_address">
+							<img src="img/add.png" />
+							<div class="rencai_city">中国/深圳</div>
+						</div>
+					</div>
+					<div class="rencai_desc">1.主导产品与解决方案体系的软件配置管理和硬件配置管理能力建设，引入业界最佳实践和...</div>
+				</li>
+				<li class="rencai_son">
+					<div class="content-title">
+						<div class="rencai_name">产品数据管理专家</div>
+						<div class="rencai_type">技术类</div>
+					</div>
+					<div class="rencai_title">
+						<div class="rencai_title_son">产品与解决方案质量与运营部</div>
+						<div class="rencai_address">
+							<img src="img/add.png" />
+							<div class="rencai_city">中国/深圳</div>
+						</div>
+					</div>
+					<div class="rencai_desc">1.主导产品与解决方案体系的软件配置管理和硬件配置管理能力建设，引入业界最佳实践和...</div>
+				</li> -->
+			</ui>
+		</div>
+		<!--#include file="footer.html"-->
+	</body>
+</html>
